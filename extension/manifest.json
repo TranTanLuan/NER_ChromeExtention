@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Get Current Tab Text and Send to Django",
+  "version": "1.0",
+  "description": "Retrieves the entire text content of the current tab and sends it to a Django backend.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "http://127.0.0.1:8000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
