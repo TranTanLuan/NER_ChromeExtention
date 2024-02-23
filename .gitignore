@@ -1,1 +1,5 @@
-backend/luan.txt
+backend/myapp/ckpt/
+backend/myapp/ckpt_bert_base_uncased/
+mrc-ner-model/ckpt/
+mrc-ner-model/ckpt_bert_base_uncased/
+mrc-ner-model/data_dir/
